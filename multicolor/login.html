@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title id="title"></title>
+<!-- Custom Theme files -->
+<!-- Custom Theme files -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<link rel="icon" href="images/favicon.png" />
+<link href="css/loader.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/w3.css" rel="stylesheet" type="text/css" media="all"/>
+<!--script-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ticker.js"></script>
+<script type="text/javascript">
+// Include CSS file
+function addCSS(filename){
+ var head = document.getElementsByTagName('head')[0];
+ var style = document.createElement('link');
+ style.href = filename;
+ style.type = 'text/css';
+ style.rel = 'stylesheet';
+ head.append(style);
+}
+</script>	
+<!--script-->
+</head>
+<body>
+      <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+      </div>
+	<div class="head">
+		<div class="logo">
+			<div class="logo-top">
+				<center><img class="center" src="images/logo.png" alt="logo"/></center>
+			</div>
+			<div class="logo-bottom">
+				<section class="sky-form">									
+<ul class="a">
+  <li>Es Kopi Susu</li>
+  <li>Vietnam Drif</li>
+  <li>Single Origin</li>
+  <li>Cappucion</li>
+  <li>Moccacino</li>
+  <li>Latte</li>
+</ul>
+				</section>
+			</div>
+			<div style="padding:10px 10px;text-align:center;color:#fff">
+				<a class="status_link" href="#status_paket">INFO VOUCHER KLIK DISINI</a>
+			</div>
+<div class="ticker">
+<ul id="menu"></ul>
+</div>
+		</div>		
+		<div class="login">
+			<div class="sap_tabs">
+				<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+<div class="w3-container">
+<div class="w3-bar w3-red">
+<button class="w3-bar-item w3-button" id="btnvcr" onclick="voucher()">VOUCHER</button>
+<button class="w3-bar-item w3-button" id="btnmem" onclick="member()">MEMBER</button>
+<!--a href="https://sayuti.com/qr/" class="w3-btn">QR Code</a-->
+</div>
+</div> 				  	 
+					<div class="resp-tabs-container">
+								$(if chap-id)
+									<form name="sendin" action="$(link-login-only)" method="post">
+										<input type="hidden" name="username" />
+										<input type="hidden" name="password" />
+										<input type="hidden" name="dst" value="$(link-orig)" />
+										<input type="hidden" name="popup" value="true" />
+									</form>
+	
+									<script type="text/javascript" src="/md5.js"></script>
+									<script type="text/javascript">
+									<!--
+	    							function doLogin() {
+									document.sendin.username.value = document.login.username.value;
+									document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+									document.sendin.submit();
+									return false;
+	    							}
+									//-->
+									</script>
+								$(endif)
+					<div class="login-top">			
+					<form autocomplete="off" name="login" action="$(link-login-only)" method="post"
+					    $(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<div class="account">
+						<ul><li><p>perhatikan huruf kecil / besar itu berpengaruh</p></li></ul>
+						</div>
+						<div class="input-form">
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+						<input class="name active" name="username" type="text" value="$(username)" placeholder="Voucher" />
+						<div class="account-show">
+						<input class="password" name="password" type="password" placeholder="Password" />
+						</div>
+						</div>
+						<div class="clear"></div>
+						<div class="login-bottom login-bottom">
+							<div class="submit">
+								<input type="submit" value="LOGIN"/>
+							</div>
+							<ul>
+							$(if trial == 'yes')
+							<li><a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="w3-btn w3-red w3-small">COBA GRATIS</a></li>
+							$(endif)
+							</ul>
+							<div class="clear"></div>
+							
+						</div>	
+					</form>
+					$(if trial == 'yes')
+						<div class="account">
+						<ul><li><p>Akun GRATIS hanya berlaku 10 menit</p></li></ul>
+						<ul><li><p>Bisa Login lagi setelah 7 hari</p></li></ul>
+						</div>
+					$(endif)	
+					</div>
+					</div>	
+				</div>
+			</div>	
+		</div>	
+		<div class="clear"></div>
+	</div>	
+
+	<div class="footer-link" style="text-align:center; margin-top:10px;">
+		  <p>$(identity) by | <a href="https://sayuti.com" target="_blank" id="link"> Sayuti.com</a><i> &copy; <i id="copyright">2020</i></i></p>
+	</div>
+<!-- The Modal -->
+<div id="alert_error" class="status_overlay">
+<div class="status_popup">
+<a class="status_close" href="#">&times;</a>
+<div id="alert"></div>
+</div>
+</div>
+<div id="status_paket" class="status_overlay">
+<div class="status_popup">
+<h2>Harga Voucher & Informasi Pembelian</h2>
+<a class="status_close" href="#">&times;</a>
+<hr class="style-one">
+<div id="alert">
+
+			<h3>PAKET MASA AKTIF</h3>
+			<table class="say_tpaketwifi" style="font-size:12px;">
+			<tr><th width="30%">PAKET (PMA)</th><th width="30%">AKTIF / USER</th><th width="40%">HARGA</th></tr>
+			<tr><td>PMA-1</td><td>1 Hari / 1 User</td><td>Rp 3.000</td></tr>
+			<tr><td>PMA-2</td><td>15 Hari / 1 User</td><td>Rp 30.000</td></tr>
+			<tr><td>PMA-3</td><td>30 Hari / 1 User</td><td>Rp 50.000</td></tr>
+			</table>
+			
+			<h3>PAKET KUOTA DATA</h3>
+			<table class="say_tpaketwifi" style="font-size:12px;">
+			<tr><th width="30%">PAKET (PKD)</th><th width="30%">KUOTA / AKTIF</th><th width="40%">HARGA</th></tr>
+			<tr><td>PKD-1</td><td>1 GB / 1 Hari</td><td>Rp 2.000</td></tr>
+			<tr><td>PKD-2</td><td>3 GB / 3 Hari</td><td>Rp 5.000</td></tr>
+			<tr><td>PKD-3</td><td>10 GB / 7 Hari</td><td>Rp 10.000</td></tr>
+			</table>
+			
+			<small>
+			<i>&bull; Paket diatas sedang <b>TAHAP AWAL</b></i><br/>
+			<i>&bull; <b>TAHAP AWAL</b> sedang berlangsung sampai yang akan datang</i><br/>
+			<i>&bull; pembelian voucher/member bisa hubungi Munajat</i></small>
+			
+</div>
+</div>
+</div>
+<script type="text/javascript">
+<!--
+document.login.username.focus();
+document.getElementById('title').innerHTML = window.location.hostname + " > login";
+
+// login page 2 mode by Laksamadi Guko
+var username = document.login.username;
+var password = document.login.password;
+var luser = document.getElementById("luser");
+var lpass = document.getElementById("lpass");
+var btnmem = document.getElementById("btnmem");
+var btnvcr = document.getElementById("btnvcr");
+<!-- $('.showm').hide(); -->
+$(".account-show").addClass("hidep");
+$(".active").addClass("voucher");
+// set password = username
+function setpass(){
+  var user = username.value		
+  password.value = user;
+}
+	
+username.onkeyup = setpass;
+	
+btnmem.style.backgroundColor = "#73818f";
+btnvcr.style.backgroundColor = "#990000";  
+
+// change to voucher mode
+function voucher(){
+  username.focus();
+  username.onkeyup = setpass;
+  username.placeholder = "Voucher";
+  password.type = "hidden";
+  password.value = username.value;  
+  btnmem.style.backgroundColor = "#73818f";
+  btnvcr.style.backgroundColor = "#990000";
+  $(".active").removeClass("name").addClass("voucher");
+}
+
+// change to member mode
+function member(){
+  username.focus();
+  username.onkeyup = "";
+  username.placeholder = "Username";
+  password.type= "password";
+  password.value = "";
+  btnmem.style.backgroundColor = "#990000"; 
+  btnvcr.style.backgroundColor = "#73818f"; 
+  $(".account-show").addClass("showp");
+  $(".active").removeClass("voucher").addClass("name");
+}
+
+//-->
+</script>
+<script src="js/loader.js"></script>
+<script src="js/data.js"></script>
+<script>
+$('.ticker').ticker();
+applyRandCSS();
+</script>
+</body>
+</html>
